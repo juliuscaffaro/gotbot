@@ -19,6 +19,7 @@
   "homepage": "https://github.com/juliuscaffaro/gotbot#readme",
   "dependencies": {
     "botbuilder": "^3.8.3",
+    "nodemon": "^1.11.0",
     "restify": "^4.3.0"
   }
 }

@@ -30,12 +30,13 @@ var bot = new builder.UniversalBot(connector, function (session) {
         session.send(obj.quote);
       });
     }else{
-      session.send("Nenhum personagem de Game Of Thrones", session.message.text);
+      session.send("Nenhum personagem de Game Of Thrones");
     }
 });
 
 function hasGotChar(char){
   char = char.toUpperCase();
   var chars = ['tyrion', 'cersei', 'bronn', 'brynden', 'hound', 'jaime', 'littlefinger', 'olenna', 'renly', 'varys'];
-  return char.indexOf(char) != -1;
+  var ind = char.indexOf(char)
+  return ind != -1;
 };
